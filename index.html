@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Mensagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="input-area">
+                <textarea id="input-text" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="buttons">
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>
+            <p class="note">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="right-section">
+            <div class="output-area">
+                <img src="assets/personagem.svg" alt="Personagem" id="personagem">
+                <textarea id="output-text" readonly placeholder="Nenhuma mensagem encontrada"></textarea>
+            </div>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
